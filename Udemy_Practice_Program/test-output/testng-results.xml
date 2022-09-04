@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-04T15:10:01 IST" name="Default suite" finished-at="2022-09-04T15:10:15 IST" duration-ms="14078">
+    <groups>
+    </groups>
+    <test started-at="2022-09-04T15:10:01 IST" name="Default test" finished-at="2022-09-04T15:10:15 IST" duration-ms="14078">
+      <class name="Drag_And_Drop">
+        <test-method is-config="true" signature="base_Config()[pri:0, instance:Drag_And_Drop@1e66f1f5]" started-at="2022-09-04T15:10:01 IST" name="base_Config" finished-at="2022-09-04T15:10:12 IST" duration-ms="10999" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- base_Config -->
+        <test-method signature="Dragactivity()[pri:0, instance:Drag_And_Drop@1e66f1f5]" started-at="2022-09-04T15:10:12 IST" name="Dragactivity" finished-at="2022-09-04T15:10:15 IST" duration-ms="3032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Dragactivity -->
+      </class> <!-- Drag_And_Drop -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
