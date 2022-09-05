@@ -64,6 +64,10 @@ public void Dragactivites(WebElement Dra, String direction)
 		    "endY", 560
 		));
 }
+public void scroller()
+{
+	
+}
 	
 }
 

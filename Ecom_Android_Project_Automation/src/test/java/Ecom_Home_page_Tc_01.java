@@ -8,7 +8,7 @@ public class Ecom_Home_page_Tc_01  extends Ecommerce_app_base_class
 	@Test
 	public void fill_form()
 	{
-		driver.findElement(AppiumBy.accessibilityId("Views")).click();
+		driver.findElement(AppiumBy.accessibilityId("")).click();
 	}
 
 }

@@ -54,7 +54,6 @@ public class Apoium_Config_Base_Class
 			    "percent", 0.75
 			));
 	}
-	
 	public void Dragactivites(WebElement Dra, String direction)
 	{
 		((JavascriptExecutor) driver).executeScript("mobile: dragGesture", ImmutableMap.of(
