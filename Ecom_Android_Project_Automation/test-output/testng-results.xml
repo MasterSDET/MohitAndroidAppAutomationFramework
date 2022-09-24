@@ -1,51 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-22T19:02:59 IST" name="Default suite" finished-at="2022-09-22T19:03:13 IST" duration-ms="14367">
+  <suite started-at="2022-09-24T14:54:57 IST" name="Default suite" finished-at="2022-09-24T14:55:24 IST" duration-ms="26745">
     <groups>
     </groups>
-    <test started-at="2022-09-22T19:02:59 IST" name="Default test" finished-at="2022-09-22T19:03:13 IST" duration-ms="14367">
+    <test started-at="2022-09-24T14:54:57 IST" name="Default test" finished-at="2022-09-24T14:55:24 IST" duration-ms="26745">
       <class name="Ecom_Home_page_Tc_01">
-        <test-method is-config="true" signature="Ecomm_app_base_Config()[pri:0, instance:Ecom_Home_page_Tc_01@1750fbeb]" started-at="2022-09-22T19:02:59 IST" name="Ecomm_app_base_Config" finished-at="2022-09-22T19:03:13 IST" duration-ms="13995" status="PASS">
+        <test-method is-config="true" signature="Ecomm_app_base_Config()[pri:0, instance:Ecom_Home_page_Tc_01@31ea9581]" started-at="2022-09-24T14:54:57 IST" name="Ecomm_app_base_Config" finished-at="2022-09-24T14:55:12 IST" duration-ms="14573" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Ecomm_app_base_Config -->
-        <test-method signature="fill_form()[pri:0, instance:Ecom_Home_page_Tc_01@1750fbeb]" started-at="2022-09-22T19:03:13 IST" name="fill_form" finished-at="2022-09-22T19:03:13 IST" duration-ms="322" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:Ecom_Home_page_Tc_01@31ea9581]" started-at="2022-09-24T14:55:12 IST" name="preSetup" finished-at="2022-09-24T14:55:13 IST" duration-ms="1194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method signature="FillForm_ErrorValidation()[pri:0, instance:Ecom_Home_page_Tc_01@31ea9581]" started-at="2022-09-24T14:55:13 IST" name="FillForm_ErrorValidation" finished-at="2022-09-24T14:55:18 IST" duration-ms="4743" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'Dotpes-MacBook-Pro.local', ip: 'fe80:0:0:0:1887:4179:9b0c:6205%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.2.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [45d0a87f-e5ce-473b-a82e-f702f126ea56, findElement {using=id, value=com.androidsample.generalstore:id/radioFemale}]
-Capabilities {appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UIAutomator2, deviceName: Sumsung, platformName: android, platformVersion: 12, udid: RZ8R22L5RQV}, appium:deviceApiLevel: 31, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M515F, appium:deviceName: RZ8R22L5RQV, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: RZ8R22L5RQV, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 91, appium:takesScreenshot: true, appium:udid: RZ8R22L5RQV, appium:viewportRect: {height: 2092, left: 0, top: 91, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 45d0a87f-e5ce-473b-a82e-f702f126ea56]]>
+              <![CDATA[expected:<Please enter your name> but was:<Please your name>]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'Dotpes-MacBook-Pro.local', ip: 'fe80:0:0:0:1887:4179:9b0c:6205%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.2.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [45d0a87f-e5ce-473b-a82e-f702f126ea56, findElement {using=id, value=com.androidsample.generalstore:id/radioFemale}]
-Capabilities {appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UIAutomator2, deviceName: Sumsung, platformName: android, platformVersion: 12, udid: RZ8R22L5RQV}, appium:deviceApiLevel: 31, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M515F, appium:deviceName: RZ8R22L5RQV, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: RZ8R22L5RQV, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 91, appium:takesScreenshot: true, appium:udid: RZ8R22L5RQV, appium:viewportRect: {height: 2092, left: 0, top: 91, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 45d0a87f-e5ce-473b-a82e-f702f126ea56
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at Ecom_Home_page_Tc_01.fill_form(Ecom_Home_page_Tc_01.java:22)
+              <![CDATA[java.lang.AssertionError: expected:<Please enter your name> but was:<Please your name>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+at Ecom_Home_page_Tc_01.FillForm_ErrorValidation(Ecom_Home_page_Tc_01.java:60)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -74,10 +53,18 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fill_form -->
+        </test-method> <!-- FillForm_ErrorValidation -->
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:Ecom_Home_page_Tc_01@31ea9581]" started-at="2022-09-24T14:55:18 IST" name="preSetup" finished-at="2022-09-24T14:55:19 IST" duration-ms="1028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method signature="FillForm_PositiveFlow()[pri:0, instance:Ecom_Home_page_Tc_01@31ea9581]" started-at="2022-09-24T14:55:19 IST" name="FillForm_PositiveFlow" finished-at="2022-09-24T14:55:24 IST" duration-ms="5174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FillForm_PositiveFlow -->
       </class> <!-- Ecom_Home_page_Tc_01 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

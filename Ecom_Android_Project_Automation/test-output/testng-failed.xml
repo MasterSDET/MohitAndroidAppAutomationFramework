@@ -6,7 +6,8 @@
       <class name="Ecom_Home_page_Tc_01">
         <methods>
           <include name="Ecomm_app_base_Config"/>
-          <include name="fill_form"/>
+          <include name="FillForm_ErrorValidation"/>
+          <include name="preSetup"/>
         </methods>
       </class> <!-- Ecom_Home_page_Tc_01 -->
     </classes>

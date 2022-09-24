@@ -20,7 +20,7 @@ public class Scroller extends Apoium_Config_Base_Class
    driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"WebView\"));"));
       
        /* Scrolling down if went to check what is last element  */
-/*		boolean canscrollmore;
+/*		boolean can scroll more;
 		do {
        ((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of(
     		    "left", 100, "top", 100, "width", 200, "height", 200,
