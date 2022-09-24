@@ -39,7 +39,7 @@ public class Apoium_Config_Base_Class
 			options.setAppActivity("io.appium.android.apis.ApiDemos");
 			
 	
-			 driver =  new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), options);
+			 driver =  new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub/"), options);
 
 
 		}
@@ -62,6 +62,11 @@ public class Apoium_Config_Base_Class
 			    "endY", 560
 			));
 	}
+	public void Longpress(WebElement Dra, String direction)
+	{
+		
+	}
+	
 		
 	}
 	

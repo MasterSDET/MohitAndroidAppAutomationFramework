@@ -5,9 +5,12 @@ import java.net.URL;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.DeviceRotation;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import com.mongodb.MapReduceCommand.OutputType;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.Activity;
@@ -81,9 +84,19 @@ public class Demo_APk extends Apoium_Config_Base_Class   // Used Inheritance wit
 		//
 		
 		
+/*
+ 
+ how to read message otp
+ 
+ driver.startActivity(new Activity (package name ,activity name));
+ 
+ 
+ take screen shot command in Appium
+ 
+File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+
 		
-		
-		
+		*/
 		
 		
 				

@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Swipe_in_Android">
+      <class name="Demo_APk">
         <methods>
-          <include name="swipe"/>
+          <include name="wiffiSetting"/>
           <include name="base_Config"/>
         </methods>
-      </class> <!-- Swipe_in_Android -->
+      </class> <!-- Demo_APk -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
