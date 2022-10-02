@@ -128,7 +128,13 @@
         </dependency>
      </dependencies>
   
-  
+  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-support</artifactId>
+    <version>4.5.0</version>
+</dependency>
+
   
   
 </project>
