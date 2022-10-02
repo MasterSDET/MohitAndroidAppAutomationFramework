@@ -33,7 +33,7 @@ import org.testng.annotations.Test;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.Activity;
 
-
+// This program shows us how to search item from list & that in cart then validate weather added item in cart is right or not
 
 public class scroll_Find_Item_TC02 extends  Ecommerce_app_base_class
 {
