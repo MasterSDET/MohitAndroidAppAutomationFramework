@@ -130,8 +130,13 @@
                   <a name="scroller">
                   </a> <!-- scroller -->
                   <span class="method-name">scroller</span>
-                  <div class="stack-trace">java.lang.NoSuchMethodError: &apos;void org.testng.Assert.assertEquals(double, java.lang.Double)&apos;
-	at CartAmount_ValidationWith_TotalAmount_TC3.scroller(CartAmount_ValidationWith_TotalAmount_TC3.java:91)
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at CartAmount_ValidationWith_TotalAmount_TC3.scroller(CartAmount_ValidationWith_TotalAmount_TC3.java:66)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -167,7 +172,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/3h/t9m1jctx5fs0b4sb43m9b53w0000gp/T/testng-eclipse--1399434884/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/3h/t9m1jctx5fs0b4sb43m9b53w0000gp/T/testng-eclipse-989811089/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -220,12 +225,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'scroller')
 data.setCell(0, 2, 'CartAmount_ValidationWith_TotalAmount_TC3')
-data.setCell(0, 3, 7357);
+data.setCell(0, 3, 4731);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -258,17 +263,17 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">Starting_page_url</span>
-                <span class="method-start">7872 ms</span>
+                <span class="method-start">7960 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">scroller</span>
-                <span class="method-start">9009 ms</span>
+                <span class="method-start">9157 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16368 ms</span>
+                <span class="method-start">13894 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

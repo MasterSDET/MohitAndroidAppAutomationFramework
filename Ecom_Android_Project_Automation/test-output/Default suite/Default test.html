@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Oct 04 12:41:04 IST 2022</td>
+<td>Started on:</td><td>Tue Oct 04 13:39:58 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16780 ms)</td>
+<tr><td>Total time:</td><td>14 seconds (14315 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,8 +76,13 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='CartAmount_ValidationWith_TotalAmount_TC3.scroller()'><b>scroller</b><br>Test class: CartAmount_ValidationWith_TotalAmount_TC3</td>
-<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.testng.Assert.assertEquals(double, java.lang.Double)&apos;
-	at CartAmount_ValidationWith_TotalAmount_TC3.scroller(CartAmount_ValidationWith_TotalAmount_TC3.java:91)
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at CartAmount_ValidationWith_TotalAmount_TC3.scroller(CartAmount_ValidationWith_TotalAmount_TC3.java:66)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -104,9 +109,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace775911842", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace775911842'><pre>java.lang.NoSuchMethodError: &apos;void org.testng.Assert.assertEquals(double, java.lang.Double)&apos;
-	at CartAmount_ValidationWith_TotalAmount_TC3.scroller(CartAmount_ValidationWith_TotalAmount_TC3.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1134894336", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1134894336'><pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at CartAmount_ValidationWith_TotalAmount_TC3.scroller(CartAmount_ValidationWith_TotalAmount_TC3.java:66)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -134,7 +144,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>7</td>
+<td>4</td>
 <td>CartAmount_ValidationWith_TotalAmount_TC3@2b40ff9c</td></tr>
 </table><p>
 </body>
