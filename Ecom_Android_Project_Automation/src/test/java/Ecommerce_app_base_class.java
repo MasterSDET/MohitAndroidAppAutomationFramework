@@ -103,7 +103,7 @@ public void swipeAction(WebElement ele,String direction)
 }
 
 
-public Double getFormattedAmount(String amount)
+public static Double getFormattedAmount(String amount)
 {
 	Double price = Double.parseDouble(amount.substring(1));
 	return price;

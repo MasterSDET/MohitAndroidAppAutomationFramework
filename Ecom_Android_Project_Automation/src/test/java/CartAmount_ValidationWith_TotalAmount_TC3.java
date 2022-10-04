@@ -73,6 +73,9 @@ public class CartAmount_ValidationWith_TotalAmount_TC3 extends  Ecommerce_app_ba
 	
 	    for(int i=0;i<Count;i++)
 		{
+	    	
+				
+	 
 	    	String Amount = productPRICE.get(i).getText();
 	    	//remove $ symbol from amount value
 	    	Double price = getFormattedAmount(Amount);
@@ -81,15 +84,18 @@ public class CartAmount_ValidationWith_TotalAmount_TC3 extends  Ecommerce_app_ba
 	    	
 	    Totalsum = Totalsum + price;  // 160.97+ 120 = 280;
 		}
-	    
+	     
 	  String DisplaySum = driver.findElement(By.id("com.androidsample.generalstore:id/totalAmountLbl")).getText();
-	 Double DisplaySumFormat = getFormattedAmount(DisplaySum);
+	  //remove $ symbol from amount value
+	  Double DisplaySumFormat = getFormattedAmount(DisplaySum);
+	  // Check added item & total amount is same or not
+	  Assert.assertEquals(Totalsum, DisplaySumFormat);
 	    
 	}
 		      
 }
 
-               
+       
 
 
 
