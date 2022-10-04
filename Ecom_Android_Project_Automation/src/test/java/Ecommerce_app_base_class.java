@@ -27,9 +27,9 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
 {
 public static AndroidDriver driver;
 
-
+//nn
 @BeforeClass
-public void Ecomm_app_base_Config() throws MalformedURLException
+public void Mobile_Browser_Base_File () throws MalformedURLException
 {		
 	
 	
