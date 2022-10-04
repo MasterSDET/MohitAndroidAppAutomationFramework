@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,24 +104,10 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Ecom_Home_page_Tc_01" class="method navigator-link" hash-for-method="FillForm_ErrorValidation">FillForm_ErrorValidation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="CartAmount_ValidationWith_TotalAmount_TC3" class="method navigator-link" hash-for-method="scroller">scroller</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Default_suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Ecom_Home_page_Tc_01" class="method navigator-link" hash-for-method="FillForm_PositiveFlow">FillForm_PositiveFlow</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -136,18 +122,16 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Ecom_Home_page_Tc_01</span>
+              <span class="class-name">CartAmount_ValidationWith_TotalAmount_TC3</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="FillForm_ErrorValidation">
-                  </a> <!-- FillForm_ErrorValidation -->
-                  <span class="method-name">FillForm_ErrorValidation</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected:&lt;Please enter your name&gt; but was:&lt;Please your name&gt;
-	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
-	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
-	at Ecom_Home_page_Tc_01.FillForm_ErrorValidation(Ecom_Home_page_Tc_01.java:60)
+                  <a name="scroller">
+                  </a> <!-- scroller -->
+                  <span class="method-name">scroller</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: &apos;void org.testng.Assert.assertEquals(double, java.lang.Double)&apos;
+	at CartAmount_ValidationWith_TotalAmount_TC3.scroller(CartAmount_ValidationWith_TotalAmount_TC3.java:91)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -180,25 +164,10 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-failed -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Ecom_Home_page_Tc_01</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="FillForm_PositiveFlow">
-                  </a> <!-- FillForm_PositiveFlow -->
-                  <span class="method-name">FillForm_PositiveFlow</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/3h/t9m1jctx5fs0b4sb43m9b53w0000gp/T/testng-eclipse-1748655100/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/3h/t9m1jctx5fs0b4sb43m9b53w0000gp/T/testng-eclipse--1399434884/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -207,7 +176,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Ecom_Home_page_Tc_01&quot;/&gt;
+      &lt;class name=&quot;CartAmount_ValidationWith_TotalAmount_TC3&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -247,20 +216,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'FillForm_PositiveFlow')
-data.setCell(0, 2, 'Ecom_Home_page_Tc_01')
-data.setCell(0, 3, 5174);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'FillForm_ErrorValidation')
-data.setCell(1, 2, 'Ecom_Home_page_Tc_01')
-data.setCell(1, 3, 4743);
+data.setCell(0, 1, 'scroller')
+data.setCell(0, 2, 'CartAmount_ValidationWith_TotalAmount_TC3')
+data.setCell(0, 3, 7357);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -286,29 +251,25 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Ecom_Home_page_Tc_01</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">CartAmount_ValidationWith_TotalAmount_TC3</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Ecomm_app_base_Config</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">preSetup</span>
-                <span class="method-start">14584 ms</span>
+                <span class="method-name">Starting_page_url</span>
+                <span class="method-start">7872 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">FillForm_ErrorValidation</span>
-                <span class="method-start">15779 ms</span>
+                <span class="method-name">scroller</span>
+                <span class="method-start">9009 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">preSetup</span>
-                <span class="method-start">20526 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">FillForm_PositiveFlow</span>
-                <span class="method-start">21554 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16368 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
