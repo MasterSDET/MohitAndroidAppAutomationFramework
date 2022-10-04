@@ -35,6 +35,8 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.Activity;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 
 // This program shows us how to search item from list & that in cart then validate weather added item in cart is right or not.
 
@@ -51,20 +53,25 @@ public class CartAmount_ValidationWith_TotalAmount_TC3 extends  Ecommerce_app_ba
 	}
 	
 	@Test
-	public static void scroller() throws InterruptedException
+	public static void scroller() throws InterruptedException 
 	{
-	
+		
 		driver.findElement(By.id("com.androidsample.generalstore:id/nameField")).sendKeys("Mohit");
+		driver.hideKeyboard();
 		driver.findElement(By.xpath("//android.widget.RadioButton[@text='Female']")).click();
 		driver.findElement(By.id("android:id/text1")).click();
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Argentina\"));"));
 		driver.findElement(By.xpath("//android.widget.TextView[@text='Argentina']")).click();
-		driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();		
-		driver.findElements(By.xpath("//android.widget.TextView[@text='ADD TO CART']")).get(0).click();
-		driver.findElements(By.xpath("//android.widget.TextView[@text='ADD TO CART']")).get(0).click();
+		driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();	
 		
-		Thread.sleep(2000);
+		driver.findElement(By.xpath("//android.widget.TextView[@text='ADD TO CART'])[0]")).click();
+		driver.findElement(By.xpath("//android.widget.TextView[@text='ADD TO CART'])[0]")).click();	
+		//or
+	//	driver.findElements(By.xpath("//android.widget.TextView[@text='ADD TO CART']")).get(0).click();	
+		
 		driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();		
+		
+		
 		WebDriverWait wait =new WebDriverWait(driver,Duration.ofSeconds(5));		
 	    wait.until(ExpectedConditions.attributeContains(driver.findElement(By.id("com.androidsample.generalstore:id/toolbar_title")),"text" , "Cart"));
 	
@@ -96,8 +103,16 @@ public class CartAmount_ValidationWith_TotalAmount_TC3 extends  Ecommerce_app_ba
 	  
 	  WebElement LongPress = driver.findElement(By.id("com.androidsample.generalstore:id/termsButton\n"));
 	  longPressAction(LongPress);
+	  driver.findElement(By.id("android:id/button1")).click();
+	  driver.findElement(By.className("android.widget.CheckBox")).click();
+	  driver.findElement(By.id("com.androidsample.generalstore:id/btnProceed")).click();
+	  Thread.sleep(2000);
 	  
-	    
+	//  driver.pressKey(new KeyEvent(AndroidKey.HOME));
+//		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+	//	driver.pressKey(new KeyEvent(AndroidKey.ENTER));
+	 
+
 	}
 		      
 }
