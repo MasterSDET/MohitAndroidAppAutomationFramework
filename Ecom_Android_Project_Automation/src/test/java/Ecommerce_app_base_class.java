@@ -38,6 +38,7 @@ public void Ecomm_app_base_Config() throws MalformedURLException
 	options.setUdid("RZ8R22L5RQV");
 	options.setPlatformName("Android");
 	options.setPlatformVersion("12");
+	options.setChromedriverExecutable("//Users//mohitgaur//Downloads//chromedriver");
 	options.setAppPackage("com.androidsample.generalstore");
 	options.setAppActivity("com.androidsample.generalstore.SplashActivity");
 	
