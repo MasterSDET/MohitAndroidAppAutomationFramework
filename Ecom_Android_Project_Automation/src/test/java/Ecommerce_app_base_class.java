@@ -47,7 +47,7 @@ public void Ecomm_app_base_Config() throws MalformedURLException
 
 }
 
-public void swipeaction(WebElement ele, String direction)
+public static void swipeaction(WebElement ele, String direction)
 {
 	
 ((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of(
@@ -57,7 +57,7 @@ public void swipeaction(WebElement ele, String direction)
 		    "percent", 0.75
 		));
 }
-public void Dragactivites(WebElement Dra, String direction)
+public static void Dragactivites(WebElement Dra, String direction)
 {
 	((JavascriptExecutor) driver).executeScript("mobile: dragGesture", ImmutableMap.of(
 		    "elementId", ((RemoteWebElement) Dra).getId(),
@@ -65,20 +65,20 @@ public void Dragactivites(WebElement Dra, String direction)
 		    "endY", 560
 		));
 }
-public void wait_Condition(WebElement put_wait, String direction)
+public static void wait_Condition(WebElement put_wait, String direction)
 {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
  //   wait.until(ExpectedConditions.visibilityOf(wait(10)));
 }
 
-public void longPressAction(WebElement ele)
+public static void longPressAction(WebElement LongPress)
 {
 	((JavascriptExecutor)driver).executeScript("mobile: longClickGesture",
-			ImmutableMap.of("elementId",((RemoteWebElement)ele).getId(),
+			ImmutableMap.of("elementId",((RemoteWebElement) LongPress).getId(),
 					"duration",2000));
 }
 
-public void scrollToEndAction()
+public static void scrollToEndAction()
 {
 	boolean canScrollMore;
 	do
@@ -90,7 +90,7 @@ public void scrollToEndAction()
 }
 
 
-public void swipeAction(WebElement ele,String direction)
+public static void swipeAction(WebElement ele,String direction)
 {
 	((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of(
 			"elementId", ((RemoteWebElement)ele).getId(),

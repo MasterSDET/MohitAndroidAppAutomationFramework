@@ -1,6 +1,7 @@
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
+import gherkin.lexer.Id;
 import io.appium.java_client.AppiumBy;
 
 import java.time.Duration;
@@ -50,7 +51,7 @@ public class CartAmount_ValidationWith_TotalAmount_TC3 extends  Ecommerce_app_ba
 	}
 	
 	@Test
-	public static void scroller()
+	public static void scroller() throws InterruptedException
 	{
 	
 		driver.findElement(By.id("com.androidsample.generalstore:id/nameField")).sendKeys("Mohit");
@@ -61,6 +62,8 @@ public class CartAmount_ValidationWith_TotalAmount_TC3 extends  Ecommerce_app_ba
 		driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();		
 		driver.findElements(By.xpath("//android.widget.TextView[@text='ADD TO CART']")).get(0).click();
 		driver.findElements(By.xpath("//android.widget.TextView[@text='ADD TO CART']")).get(0).click();
+		
+		Thread.sleep(2000);
 		driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();		
 		WebDriverWait wait =new WebDriverWait(driver,Duration.ofSeconds(5));		
 	    wait.until(ExpectedConditions.attributeContains(driver.findElement(By.id("com.androidsample.generalstore:id/toolbar_title")),"text" , "Cart"));
@@ -90,6 +93,10 @@ public class CartAmount_ValidationWith_TotalAmount_TC3 extends  Ecommerce_app_ba
 	  Double DisplaySumFormat = getFormattedAmount(DisplaySum);
 	  // Check added item & total amount is same or not
 	  Assert.assertEquals(Totalsum, DisplaySumFormat);
+	  
+	  WebElement LongPress = driver.findElement(By.id("com.androidsample.generalstore:id/termsButton\n"));
+	  longPressAction(LongPress);
+	  
 	    
 	}
 		      
