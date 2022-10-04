@@ -40,7 +40,8 @@ import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 
-// This program shows us how to search item from list & that in cart then validate weather added item in cart is right or not.
+// This program shows us how to search item from list & that in cart then validate weather price & item added item in 
+// cart is right or not with total price & also google browser open in web view & search same word on it. 
 
 public class Hybrid_modal_TC_05 extends  Ecommerce_app_base_class
 {
