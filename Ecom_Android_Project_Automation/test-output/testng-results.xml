@@ -2,32 +2,27 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-04T13:39:58 IST" name="Default suite" finished-at="2022-10-04T13:40:12 IST" duration-ms="14315">
+  <suite started-at="2022-10-04T14:22:42 IST" name="Default suite" finished-at="2022-10-04T14:23:06 IST" duration-ms="24281">
     <groups>
     </groups>
-    <test started-at="2022-10-04T13:39:58 IST" name="Default test" finished-at="2022-10-04T13:40:12 IST" duration-ms="14315">
+    <test started-at="2022-10-04T14:22:42 IST" name="Default test" finished-at="2022-10-04T14:23:06 IST" duration-ms="24281">
       <class name="CartAmount_ValidationWith_TotalAmount_TC3">
-        <test-method is-config="true" signature="Ecomm_app_base_Config()[pri:0, instance:CartAmount_ValidationWith_TotalAmount_TC3@2b40ff9c]" started-at="2022-10-04T13:39:58 IST" name="Ecomm_app_base_Config" finished-at="2022-10-04T13:40:06 IST" duration-ms="7951" status="PASS">
+        <test-method is-config="true" signature="Ecomm_app_base_Config()[pri:0, instance:CartAmount_ValidationWith_TotalAmount_TC3@2b40ff9c]" started-at="2022-10-04T14:22:42 IST" name="Ecomm_app_base_Config" finished-at="2022-10-04T14:22:50 IST" duration-ms="8037" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Ecomm_app_base_Config -->
-        <test-method is-config="true" signature="Starting_page_url()[pri:0, instance:CartAmount_ValidationWith_TotalAmount_TC3@2b40ff9c]" started-at="2022-10-04T13:40:06 IST" name="Starting_page_url" finished-at="2022-10-04T13:40:07 IST" duration-ms="1197" status="PASS">
+        <test-method is-config="true" signature="Starting_page_url()[pri:0, instance:CartAmount_ValidationWith_TotalAmount_TC3@2b40ff9c]" started-at="2022-10-04T14:22:50 IST" name="Starting_page_url" finished-at="2022-10-04T14:22:51 IST" duration-ms="1163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Starting_page_url -->
-        <test-method signature="scroller()[pri:0, instance:CartAmount_ValidationWith_TotalAmount_TC3@2b40ff9c]" started-at="2022-10-04T13:40:07 IST" name="scroller" finished-at="2022-10-04T13:40:12 IST" duration-ms="4731" status="FAIL">
-          <exception class="java.lang.IndexOutOfBoundsException">
+        <test-method signature="scroller()[pri:0, instance:CartAmount_ValidationWith_TotalAmount_TC3@2b40ff9c]" started-at="2022-10-04T14:22:51 IST" name="scroller" finished-at="2022-10-04T14:23:06 IST" duration-ms="14628" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
             <message>
-              <![CDATA[Index 0 out of bounds for length 0]]>
+              <![CDATA['void org.testng.Assert.assertEquals(double, java.lang.Double)']]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
-at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
-at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
-at java.base/java.util.Objects.checkIndex(Objects.java:359)
-at java.base/java.util.ArrayList.get(ArrayList.java:427)
-at CartAmount_ValidationWith_TotalAmount_TC3.scroller(CartAmount_ValidationWith_TotalAmount_TC3.java:66)
+              <![CDATA[java.lang.NoSuchMethodError: 'void org.testng.Assert.assertEquals(double, java.lang.Double)'
+at CartAmount_ValidationWith_TotalAmount_TC3.scroller(CartAmount_ValidationWith_TotalAmount_TC3.java:101)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -56,11 +51,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scroller -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:CartAmount_ValidationWith_TotalAmount_TC3@2b40ff9c]" started-at="2022-10-04T13:40:12 IST" name="tearDown" finished-at="2022-10-04T13:40:12 IST" duration-ms="406" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:CartAmount_ValidationWith_TotalAmount_TC3@2b40ff9c]" started-at="2022-10-04T14:23:06 IST" name="tearDown" finished-at="2022-10-04T14:23:06 IST" duration-ms="422" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

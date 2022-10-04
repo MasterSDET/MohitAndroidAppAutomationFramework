@@ -7,12 +7,14 @@ import io.appium.java_client.AppiumBy;
 import java.time.Duration;
 import java.time.temporal.TemporalAmount;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -40,7 +42,7 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 
 // This program shows us how to search item from list & that in cart then validate weather added item in cart is right or not.
 
-public class CartAmount_ValidationWith_TotalAmount_TC3 extends  Ecommerce_app_base_class
+public class Hybrid_modal_TC_05 extends  Ecommerce_app_base_class
 {
 	@BeforeMethod
 	public void Starting_page_url()
@@ -105,11 +107,20 @@ public class CartAmount_ValidationWith_TotalAmount_TC3 extends  Ecommerce_app_ba
 	  driver.findElement(By.id("android:id/button1")).click();
 	  driver.findElement(By.className("android.widget.CheckBox")).click();
 	  driver.findElement(By.id("com.androidsample.generalstore:id/btnProceed")).click();
-	  Thread.sleep(2000);
+	  Thread.sleep(6000);
 	  
-	//  driver.pressKey(new KeyEvent(AndroidKey.HOME));
-//		driver.pressKey(new KeyEvent(AndroidKey.BACK));
-	//	driver.pressKey(new KeyEvent(AndroidKey.ENTER));
+	//after click on process button google chrome is open then our app is convert into hybrid app from native.
+	  Set<String> contexts =driver.getContextHandles();
+		for(String contextName :contexts)
+		{
+			System.out.println(contextName);
+		}
+		
+		driver.context("WEBVIEW_com.androidsample.generalstore");//chrome driver
+		driver.findElement(By.name("q")).sendKeys("rahul shetty academy");
+		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		driver.context("NATIVE_APP");
 	 
 
 	}

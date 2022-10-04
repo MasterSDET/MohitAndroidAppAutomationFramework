@@ -16,7 +16,6 @@
 </dependency>
  
 
-
 	<dependency>
 		<groupId>info.cukes</groupId>
 		<artifactId>cucumber-java</artifactId>
@@ -112,7 +111,6 @@
 </dependency>
 
 
-
 <!-- https://mvnrepository.com/artifact/org.scala-lang/scala-library -->
 <dependency>
     <groupId>org.scala-lang</groupId>
@@ -128,7 +126,8 @@
         </dependency>
      </dependencies>
   
-  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
+
+
 
   
   
