@@ -78,44 +78,39 @@ public class Demo_APk extends Apoium_Config_Base_Class   // Used Inheritance wit
 		
 		
 		
-		
-		
-		
-		//
-		
-		
 /*
  
- how to read message otp
+    #  how to read message otp
  
- driver.startActivity(new Activity (package name ,activity name));
+          driver.startActivity(new Activity (package name ,activity name));
  
  
- take screen shot command in Appium
+     # take screen shot command in Appium
  
-File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+          File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 
 		
-		*/
+	
 		
 		
 				
-/*
-		/*Thread.sleep
+
+		# Thread.sleep
 		 
-		try{
-		Thread.sleep(5000);
-		}
-		catch(InterruptedException ie){
-		}
-		 * Implicit wait if we give wait 5 sec & got result in 3 sec then it will execute the line befor time as well as .
+	     	try{
+	        	Thread.sleep(5000);
+		        }
+	        	catch(InterruptedException ie)
+	        	{
+	         	}
+		 # Implicit wait if we give wait 5 sec & got result in 3 sec then it will execute the line before time as well as .
 		 
 		 
-		 * driver.manage().timeouts().implicitlyWait(Time Interval to wait for, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(Time Interval to wait for, TimeUnit.SECONDS);
 		 
-		 * how to define explicit waitif we dont now the time of load page then we use this 
+		 # how to define explicit wait if we don't now the time of load page then we use this 
 		 
-		 WebDriverWait wait=new WebDriverWait(driver, 120);
+		    WebDriverWait wait=new WebDriverWait(driver, 120);
 		                
 		                
 		                wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='Campaign__innerWrapper']/button"))));

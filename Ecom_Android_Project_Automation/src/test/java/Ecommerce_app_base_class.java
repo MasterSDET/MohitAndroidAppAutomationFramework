@@ -110,6 +110,7 @@ public static Double getFormattedAmount(String amount)
 	return price;
 	
 }
+
 @AfterClass
 public void tearDown()
 {
