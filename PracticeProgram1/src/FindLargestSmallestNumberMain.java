@@ -1,9 +1,11 @@
+import java.util.concurrent.RecursiveTask;
+import java.util.function.IntBinaryOperator;
 
-public class FindLargestSmallestNumberMain {
+public class FindLargestSmallestNumberMain
 
-	public static void main(String[] args) 
+{
+	public static void main(String[] args) 	
 	{
-	
 	
 		//array of 10 numbers
 		int arr[] = new int[]{12,56,76,89,100,343,21,234};

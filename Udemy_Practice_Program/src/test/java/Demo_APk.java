@@ -65,6 +65,7 @@ public class Demo_APk extends Apoium_Config_Base_Class   // Used Inheritance wit
 		// if you went open direct any page from the app & start testing on that page only you use this method
 		// find app activity & that page accitivie  name from terminal 
 		// run this on terminal 
+		
 		// adb shell dumpsys window | grep -E 'mCurrentFocus'    
 		
 		// you will find current mobile open page acctive file path 
