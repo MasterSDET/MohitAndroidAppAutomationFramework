@@ -1,84 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-24T13:23:55 IST" name="Default suite" finished-at="2022-09-24T13:24:20 IST" duration-ms="24327">
+  <suite started-at="2023-04-03T15:07:36 IST" name="Default suite" finished-at="2023-04-03T15:07:51 IST" duration-ms="15069">
     <groups>
     </groups>
-    <test started-at="2022-09-24T13:23:55 IST" name="Default test" finished-at="2022-09-24T13:24:20 IST" duration-ms="24327">
-      <class name="Demo_APk">
-        <test-method is-config="true" signature="base_Config()[pri:0, instance:Demo_APk@7ce69770]" started-at="2022-09-24T13:23:55 IST" name="base_Config" finished-at="2022-09-24T13:24:13 IST" duration-ms="17846" status="PASS">
+    <test started-at="2023-04-03T15:07:36 IST" name="Default test" finished-at="2023-04-03T15:07:51 IST" duration-ms="15069">
+      <class name="Drag_And_Drop">
+        <test-method is-config="true" signature="base_Config()[pri:0, instance:Drag_And_Drop@6c284af]" started-at="2023-04-03T15:07:36 IST" name="base_Config" finished-at="2023-04-03T15:07:48 IST" duration-ms="11980" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- base_Config -->
-        <test-method signature="wiffiSetting()[pri:0, instance:Demo_APk@7ce69770]" started-at="2022-09-24T13:24:13 IST" name="wiffiSetting" finished-at="2022-09-24T13:24:20 IST" duration-ms="6422" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'Dotpes-MacBook-Pro.local', ip: '2405:204:1299:fbff:3d37:2ead:b88a:1273%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.2.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [a31b2d53-e378-411f-9cd5-7ede3528990d, findElement {using=xpath, value=//android.widget.Button[@index='1']}]
-Capabilities {appium:appActivity: io.appium.android.apis.ApiD..., appium:appPackage: io.appium.android.apis, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: io.appium.android.apis.ApiD..., appPackage: io.appium.android.apis, automationName: UIAutomator2, deviceName: Test_Device2, platformName: android, platformVersion: 12, udid: RZ8R22L5RQV}, appium:deviceApiLevel: 31, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M515F, appium:deviceName: RZ8R22L5RQV, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: RZ8R22L5RQV, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 91, appium:takesScreenshot: true, appium:udid: RZ8R22L5RQV, appium:viewportRect: {height: 2092, left: 0, top: 91, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: a31b2d53-e378-411f-9cd5-7ede3528990d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'Dotpes-MacBook-Pro.local', ip: '2405:204:1299:fbff:3d37:2ead:b88a:1273%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.2.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [a31b2d53-e378-411f-9cd5-7ede3528990d, findElement {using=xpath, value=//android.widget.Button[@index='1']}]
-Capabilities {appium:appActivity: io.appium.android.apis.ApiD..., appium:appPackage: io.appium.android.apis, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: io.appium.android.apis.ApiD..., appPackage: io.appium.android.apis, automationName: UIAutomator2, deviceName: Test_Device2, platformName: android, platformVersion: 12, udid: RZ8R22L5RQV}, appium:deviceApiLevel: 31, appium:deviceManufacturer: samsung, appium:deviceModel: SM-M515F, appium:deviceName: RZ8R22L5RQV, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: RZ8R22L5RQV, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 91, appium:takesScreenshot: true, appium:udid: RZ8R22L5RQV, appium:viewportRect: {height: 2092, left: 0, top: 91, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: a31b2d53-e378-411f-9cd5-7ede3528990d
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at Demo_APk.wiffiSetting(Demo_APk.java:51)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="Dragactivity()[pri:0, instance:Drag_And_Drop@6c284af]" started-at="2023-04-03T15:07:48 IST" name="Dragactivity" finished-at="2023-04-03T15:07:51 IST" duration-ms="3047" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- wiffiSetting -->
-      </class> <!-- Demo_APk -->
+        </test-method> <!-- Dragactivity -->
+      </class> <!-- Drag_And_Drop -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

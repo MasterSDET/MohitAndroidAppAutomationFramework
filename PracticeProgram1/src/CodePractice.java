@@ -3,8 +3,25 @@ class CodePractice
 		
 		public static void main(String[] args)
 		{
+			// Print ABCD
+			
+			String a = " A ', B ', C ', D ";
+			
+			// System.out.println(Sreing(reverse(a)));
+			 for(int i =a.length()-1;   i>=0;   i--)
+				 
+				 
 
-// reverse of string
+			    {
+			     System.out.println(a.charAt(i));
+			
+			
+		}
+}
+}
+
+
+/* reverse of string
 
 		String s = "Mohit kumar gaur";
 
@@ -22,8 +39,8 @@ class CodePractice
 		     System.out.println(s.charAt(i));
 
 		    }
-		}
-}
+		} 
+} */
 
 
 

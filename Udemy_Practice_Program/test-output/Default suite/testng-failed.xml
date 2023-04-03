@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Demo_APk">
+      <class name="LogPress_Test_Case">
         <methods>
-          <include name="wiffiSetting"/>
+          <include name="Longpress"/>
           <include name="base_Config"/>
         </methods>
-      </class> <!-- Demo_APk -->
+      </class> <!-- LogPress_Test_Case -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

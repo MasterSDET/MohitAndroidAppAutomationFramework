@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CartAmount_ValidationWith_TotalAmount_TC3">
+      <class name="Ecom_Home_page_Tc_01">
         <methods>
-          <include name="Ecomm_app_base_Config"/>
-          <include name="scroller"/>
+          <include name="FillForm_ErrorValidation"/>
+          <include name="preSetup"/>
+          <include name="FillForm_PositiveFlow"/>
+          <include name="Mobile_Browser_Base_File"/>
           <include name="tearDown"/>
-          <include name="Starting_page_url"/>
         </methods>
-      </class> <!-- CartAmount_ValidationWith_TotalAmount_TC3 -->
+      </class> <!-- Ecom_Home_page_Tc_01 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
