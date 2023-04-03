@@ -57,7 +57,7 @@ public class Ecom_Home_page_Tc_01  extends Ecommerce_app_base_class
 		driver.findElement(By.xpath("//android.widget.TextView[@text='Argentina']")).click();
 		driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();
 	//	String toastMessage = driver.findElement(By.xpath("(//android.widget.Toast)[1]")).getAttribute("name");
-	//	AssertJUnit.assertEquals(toastMessage,"Please your name");
+	//	AssertJUnit.assertEquals(toastMessage,"Please enter your name");
 		
 		
 			
