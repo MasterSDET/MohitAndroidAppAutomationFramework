@@ -35,15 +35,13 @@ public class Swipe_in_Android extends Apoium_Config_Base_Class
 
 		//if you went import code from base class & run this same swipe then this is the way
 		
-	/*	WebElement firstimage = driver.findElement(By.xpath("(//android.widget.ImageView)[1]"));	
+		
+		WebElement firstimages = driver.findElement(By.xpath("(//android.widget.ImageView)[1]"));	
 	 
 	 
-		swipeaction(firstimage,"left");
+		swipeaction(firstimages,"left");
 		
 		
-	  
-	  
-		*/
 	}
 
 }

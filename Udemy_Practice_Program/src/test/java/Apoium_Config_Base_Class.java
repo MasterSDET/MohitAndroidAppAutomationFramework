@@ -1,7 +1,8 @@
     import java.net.MalformedURLException;
 		import java.net.URL;
+import java.time.Duration;
 
-	import io.appium.java_client.AppiumBy;
+import io.appium.java_client.AppiumBy;
 	import io.appium.java_client.android.AndroidDriver;
 
 	import org.openqa.selenium.By;
@@ -40,16 +41,18 @@ public class Apoium_Config_Base_Class
 			
 	
 			 driver =  new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub/"), options);
+			 
+			 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
 
 		}
 	
-	public void swipeaction(WebElement ele, String direction)
+	public void swipeaction(WebElement firstimages, String direction)
 	{
 		
     ((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of(
 			    
-				"elementId", ((RemoteWebElement)ele).getId(),
+				"elementId", ((RemoteWebElement)firstimages).getId(),
 			    "direction", "left",			    
 			    "percent", 0.75
 			));
@@ -62,11 +65,15 @@ public class Apoium_Config_Base_Class
 			    "endY", 560
 			));
 	}
-	public void Longpress(WebElement Dra, String direction)
+	public void longPressAction(WebElement LongPress)
 	{
-		
+		((JavascriptExecutor)driver).executeScript("mobile: longClickGesture",
+				ImmutableMap.of("elementId",((RemoteWebElement)LongPress).getId(),
+						"duration",2000));
 	}
 	
+
+		
 		
 	}
 	

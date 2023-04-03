@@ -23,19 +23,25 @@ public class LogPress_Test_Case  extends Apoium_Config_Base_Class
 	 
 	 driver.findElement(AppiumBy.accessibilityId("1. Custom Adapter")).click();
 	 
-	
 	 /* defining Long press syntax */
+	WebElement LongPress=	driver.findElement(By.xpath("//android.widget.TextView[@text='People Names']"));
+	longPressAction(LongPress);
+	
+	//checking pop up
+	String menuText =	driver.findElement(By.id("android:id/title")).getText();
+	Assert.assertEquals(menuText, "Sample menu");
+	Assert.assertTrue(driver.findElement(By.id("android:id/title")).isDisplayed());
+	
 	 
-	 WebElement ele= driver.findElement(By.xpath("//android.widget.TextView[@text='People Names']"));
-	 ((JavascriptExecutor)driver).executeScript("mobile: LongClickGesture", 
-			                     ImmutableMap.of("elementId",((RemoteWebElement)ele).getId() 
-			                    ,"duration", 2000));
+	
+
 	 
+
 	 // pop up index string is match to check weather right pop up is occurred or not 
 	 
-	 String mo = driver.findElement(By.id("android:id/tittle")).getText();
+	// String mo = driver.findElement(By.id("android:id/tittle")).getText();
 	 
-	 Assert.assertEquals(mo, "Sample menu");
+	// Assert.assertEquals(mo, "Sample menu");
 	 
 	 
 	 
