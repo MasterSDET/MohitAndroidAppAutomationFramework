@@ -44,7 +44,8 @@ public class Ecom_Home_page_Tc_01  extends Ecommerce_app_base_class
 		
 	}
 	
-	@Test
+	
+	@Test(priority = 2)
 
 	public void FillForm_ErrorValidation() throws InterruptedException
 	{
@@ -64,7 +65,7 @@ public class Ecom_Home_page_Tc_01  extends Ecommerce_app_base_class
 	}
 	
 
-	@Test
+	@Test(priority = 1)
 	public void FillForm_PositiveFlow() throws InterruptedException
 
 	
