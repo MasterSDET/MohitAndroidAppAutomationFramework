@@ -1,3 +1,4 @@
+import org.testng.annotations.Test;
 import java.sql.Driver;
 
 import org.openqa.selenium.By;

@@ -1,3 +1,5 @@
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.net.MalformedURLException;
 
 import org.openqa.selenium.By;
@@ -29,8 +31,8 @@ public class LogPress_Test_Case  extends Apoium_Config_Base_Class
 	
 	//checking pop up
 	String menuText =	driver.findElement(By.id("android:id/title")).getText();
-	Assert.assertEquals(menuText, "Sample menu");
-	Assert.assertTrue(driver.findElement(By.id("android:id/title")).isDisplayed());
+	AssertJUnit.assertEquals(menuText, "Sample menu");
+	AssertJUnit.assertTrue(driver.findElement(By.id("android:id/title")).isDisplayed());
 	
 	 
 	

@@ -1,3 +1,4 @@
+import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 
 import org.openqa.selenium.JavascriptExecutor;

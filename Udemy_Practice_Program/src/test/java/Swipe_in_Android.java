@@ -1,3 +1,5 @@
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.objectweb.asm.commons.ModuleTargetAttribute;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -8,7 +10,6 @@ import org.testng.annotations.Test;
 import com.google.common.collect.ImmutableMap;
 
 import io.appium.java_client.AppiumBy;
-import junit.framework.Assert;
 
 public class Swipe_in_Android extends Apoium_Config_Base_Class
 
@@ -21,7 +22,7 @@ public class Swipe_in_Android extends Apoium_Config_Base_Class
 		driver.findElement(AppiumBy.accessibilityId("1. Photos")).click();
 		
 		WebElement firstimage = driver.findElement(By.xpath("(//android.widget.ImageView)[1]"));	
-		Assert.assertEquals(driver.findElement(By.xpath("(//android.widget.ImageView)[1]")).getAttribute("focusable"),"true");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("(//android.widget.ImageView)[1]")).getAttribute("focusable"),"true");
 		
 	
 		((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of(
@@ -31,7 +32,7 @@ public class Swipe_in_Android extends Apoium_Config_Base_Class
 			    "percent", 0.75
 			));
 	
-		Assert.assertEquals(driver.findElement(By.xpath("(//android.widget.ImageView)[1]")).getAttribute("focusable"),"false");
+		AssertJUnit.assertEquals(driver.findElement(By.xpath("(//android.widget.ImageView)[1]")).getAttribute("focusable"),"false");
 
 		//if you went import code from base class & run this same swipe then this is the way
 		

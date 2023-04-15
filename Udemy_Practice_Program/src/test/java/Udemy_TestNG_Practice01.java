@@ -1,4 +1,5 @@
-    import java.net.MalformedURLException;
+    import org.testng.annotations.Test;
+	import java.net.MalformedURLException;
 	import java.net.URL;
 
 import io.appium.java_client.AppiumBy;

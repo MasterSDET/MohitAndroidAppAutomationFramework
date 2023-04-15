@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name=".Scroller"/>
+    </classes>   
+  </test> <!-- Test -->
+  
+  
+  
+  
+  <test thread-count="5" name="Test">
+    <classes>
+    <class name=".Drag_And_Drop"/>
+    </classes>   
+  </test> <!-- Test -->
+  
+  
+  
+   
+  <test thread-count="5" name="Test">
+    <classes>
+    <class name=".LogPress_Test_Case"/>
+    </classes>   
+  </test> <!-- Test -->
+  
+  
+   
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name=".Demo_APk"/>
+
+    </classes>   
+  </test> <!-- Test -->
+  
+  
+  <test thread-count="5" name="Test">
+    <classes>
+    <class name=".Udemy_TestNG_Practice01"/>
+    </classes>   
+  </test> <!-- Test -->
+  
+  
+  
+   <test thread-count="5" name="Test">
+    <classes>
+    <class name=".Swipe_in_Android"/>
+    </classes>   
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->
+
+
+
+
+ 
+  
+      
+     
